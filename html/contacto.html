@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../imagenes/aurea.ico">
+    <link rel="stylesheet" href="../css//contacto.css"/>
+    <script src="../js/bundle.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="grid-container">
+
+        <header>
+
+            <div class="logo">
+
+                <a href="../index.html"><img src="../imagenes/logo01.png" alt="" width="100%"></a>
+
+            </div>
+ 
+            <div class="menu">
+
+                <div class="mobile-menu">
+                    <img src="../imagenes/barras.svg" alt="icono menu responsive" width="1%">
+                </div>
+
+                <div class="burguer">
+
+                    <nav class="navegacion">
+
+                        <a href="../index.html"><p>INICIO</p></a>
+                        
+                        <a href="./servicios.html"><p>SERVICIOS</p></a>
+                        <a href="./renovables.html"><p>RENOVABLES</p></a>
+                        <a href="./contacto.html"><p>CONTACTO</p></a>
+
+                    </nav>
+
+                </div>
+                
+            </div>
+            
+        </header>
+
+        <aside class="left">
+           
+        </aside>
+        
+        <main>
+            
+            <div id="container1">
+
+                <section id="section1">
+                   
+                    <div class="contenido">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.209306639605!2d-3.8050494496210288!3d37.97224440844795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6c2b96e0c57219%3A0xa60eee666c9a42a7!2sCADE%20Meng%C3%ADbar!5e0!3m2!1ses!2ses!4v1671566341256!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><h3>UBICACIóN</h3>
+                    </div>  
+
+                </section>
+
+            </div>
+
+            <div id="container2">
+
+                <section id="section2">
+
+                   
+
+                    <div class="boton">
+
+                        <a href="#"><img src="../imagenes/totop2.png"  alt=""/></a>
+
+                    </div>
+
+                    <h3>FORMULARIO</h3>
+  
+                    <form action="recibeform.php" method="post" enctype="multipart/form-data" autocomplete="on">
+
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="nombre">Nombre*</label>           
+                        <input type="text" id="nombre" name="nombre" class="mediana" autofocus autocomplete="on">
+
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Los dos apellidos" class="mediana">
+                        
+                        <br><br>
+                    
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni"  placeholder="12345678-A" class="mediana" required pattern="[0-9]{8}-[A-Z]" maxlength="10">  
+                        
+                        <label for="nacimiento">Nacimiento</label>
+                        <input type="text" id="dni" name="nacimiento"  placeholder="27/06/1983" class="mediana" pattern="([0-3])([0-9])([/])([0-9])([1-2])([/])([1-2])([0-9])([0-9])([0-9])" maxlength="10">
+
+                        <br><br>
+
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" value="25" max="65" min="18"  class="pequenia" maxlength="2">  
+
+                        <label for="sexo">Sexo</label>
+                        <input type="radio" id="sexo" name="sexo" value="mujer" checked> Mujer
+                        <input type="radio" id="sexo" name="sexo" value="hombre"> Hombre 
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Datos de Contacto</legend>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" class="mediogrande" placeholder="Calle, nº, ciudad, Provincia">
+
+                        <br>
+                        <label for="cp">Código Postal</label>
+                        <input type="text" id="cp" name="cp" class="pequenia" maxlength="5">
+
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" value="Madrid">
+
+                        <label for="provincia">Provincia</label>
+                        <select id="provincia" name="provincia">
+                            <option value="">- selecciona -</option>
+                            <option value="15">A coruña</option>
+                            <option value="1">Álava</option>
+                            <option value="2">Albacete</option>
+                            <option value="3">Alicante</option>
+                            <option value="4">Almería</option>
+                            <option value="33">Asturias</option>
+                            <option value="5">Ávila</option>
+                            <option value="6">Badajoz</option>
+                            <option value="7">Baleares</option>
+                            <option value="8">Barcelona</option>
+                            <option value="9">Burgos</option>
+                            <option value="10">Cáceres</option>
+                            <option value="11">Cádiz</option>
+                            <option value="39">Cantabria</option>
+                            <option value="12">Castellón</option>
+                            <option value="51">Ceuta</option>
+                            <option value="13">Ciudad Real</option>
+                            <option value="14">Córdoba</option>
+                            <option value="16">Cuenca</option>
+                            <option value="99">Extranjero</option>
+                            <option value="17">Girona</option>
+                            <option value="18">Granada</option>
+                            <option value="19">Guadalajara</option>
+                            <option value="20">Guipúzcoa</option>
+                            <option value="21">Huelva</option>
+                            <option value="22">Huesca</option>
+                            <option value="23">Jaén</option>
+                            <option value="26">La rioja</option>
+                            <option value="35">Las palmas</option>
+                            <option value="24">León</option>
+                            <option value="25">Lleida</option>
+                            <option value="27">Lugo</option>
+                            <option value="28">Madrid</option>
+                            <option value="29">Málaga</option>
+                            <option value="52">Melilla</option>
+                            <option value="30">Murcia</option>
+                            <option value="31">Navarra</option>
+                            <option value="32">Ourense</option>
+                            <option value="34">Palencia</option>
+                            <option value="36">Pontevedra</option>
+                            <option value="37">Salamanca</option>
+                            <option value="38">Santa cruz de tenerife</option>
+                            <option value="40">Segovia</option>
+                            <option value="41">Sevilla</option>
+                            <option value="42">Soria</option>
+                            <option value="43">Tarragona</option>
+                            <option value="44">Teruel</option>
+                            <option value="45">Toledo</option>
+                            <option value="46">Valencia</option>
+                            <option value="47">Valladolid</option>
+                            <option value="48">Vizcaya</option>
+                            <option value="49">Zamora</option>
+                            <option value="50">Zaragoza</option>
+                        </select>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="password" id="clave" name="clave">
+                    </fieldset>
+
+                    <fieldset>
+                        
+                        <label for="sugerencias">Sugerencias</label>
+                        <textarea id="sugerencias" name="sugerencias" class="grande"  rows="5"></textarea>
+                    </fieldset>
+
+                    </form>
+                    <div class="imagen">
+                        <img src="../imagenes/contacto/contacto2.png"/>
+                    
+                    </div> 
+
+                    <div class="linea">
+                        <img src="../imagenes/linea-arcoiris2.png"  alt="" width="100%"/>
+                    </div> 
+
+                </section>
+
+            </div>
+            
+        </main>
+
+        <aside class="right">
+        
+        </aside>
+
+        <footer>
+
+            
+            <div class="background">
+                <img src="../imagenes/footerbacground.png" width="100%" height="auto"/>
+            </div>
+                
+            <div class="social">
+
+                <a href="#"><img src="../imagenes/media/facebook.png" alt="Icono Facebook" title="facebook"  ></a>
+
+                <a href="#"><img src="../imagenes/media/googleplus.png" alt="Icono Google" title="google"></a>
+
+                <a href="#"><img src="../imagenes/media/linkedin.png" alt="Icono Linkedin" title="linkedin"></a>
+
+                <a href="#"><img src="../imagenes/media/skype.png" alt="Icono Skype" title="skype"></a>
+
+                <a href="#"><img src="../imagenes/media/twitter.png" alt="Icono Twitter" title="twiter"></a>
+
+                <a href="#"><img src="../imagenes/media/email.png" alt="Icono Email" title="email"></a>
+            </div>
+            
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,655 @@
+/*FUENTES-MAQUETACION-MOBILE*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=MuseoModerno&display=swap');
+
+
+*,:after,:before {
+    box-sizing: inherit
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box
+}
+
+body {
+    
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+p{
+    font-family: 'Comfortaa';
+}
+
+h3{
+    font-family: 'MuseoModerno';
+}
+
+/*GRID-FLEX-CONTAINER-MODE*/
+
+.grid-container{
+    min-width: 25rem;
+
+    display: grid;
+    background-size: cover;
+    background-color: white;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: repeat(3,auto);
+    gap: 10px;
+}
+
+.grid-container > *{
+
+    background-color: white;
+    
+    text-align: center;
+    color:black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/*CABECERA*/
+
+header, footer{
+
+    display: flex;
+    grid-column: 1 / span 3;
+   
+}
+
+header{
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.logo{
+    
+    width: 30%;
+    height: auto;
+    padding: 5%;
+    
+    justify-content: center;
+    align-self: center;
+    
+}
+
+
+.menu{
+    
+    border-radius: 10px;
+    width: 100%;
+    height:auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.mobile-menu{
+    border-radius: 10px;
+    align-self: center;
+    background-color: gray;
+    border: 1px solid black;
+    
+}
+
+.navegacion {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out,opacity .5s linear,height .5s linear
+}
+
+.navegacion a {
+
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center
+
+}
+
+.navegacion a:hover {
+
+    border-radius: 10px;
+    background-color: rgb(196, 200, 198);
+    color: rgb(12, 16, 235);
+}
+
+.mostrar {
+
+    padding: 10px;
+    visibility: visible;
+    opacity: 1;
+    height: auto
+    
+}
+
+/*CUERPO*/
+
+main{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.bann_capt{
+    text-decoration: wavy;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: white;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+section a:hover{
+    
+    opacity: 10;
+    filter:sepia(60%);
+   
+
+}
+   
+
+.titulo{
+    font-size: 4rem;
+    margin-top: 10rem;
+    
+
+}
+
+.boton img{
+
+    width: 20%;
+    
+
+  
+    
+}
+.texto{
+    text-align: justify;
+    margin-bottom: 5rem;
+}
+
+.imagen{
+
+   justify-items: center; 
+   margin-bottom: 5rem;  
+   
+}
+
+.imagen img{
+
+    width: 30%;
+}
+
+.linea{
+    width: 100%;
+
+}
+
+ 
+/*PIE DE PAGINA*/
+
+footer {
+
+    position: relative;
+    background-image: url(./imagenes/footerbacground.png);
+
+}
+
+.background{
+
+width:100%;
+height: auto;
+
+}
+
+.social{
+
+align-self: flex-end;
+position: absolute;
+
+
+
+}
+
+.social img{
+
+width: 5%;
+filter: grayscale(100%);
+opacity: 0.7;
+margin: 5px;
+
+}
+
+.social a:hover img{
+    filter: grayscale(100%);
+    opacity: 1;
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width: 0px) and (max-width: 249px){
+    
+    .grid-container{
+        grid-template-columns: 1% auto 1%;
+        
+    }
+
+    body {
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    h3{
+        font-size: 3rem;
+
+    }
+
+    
+}
+
+@media screen and (min-width: 250px) and (max-width: 639px){
+    
+    .grid-container{
+        grid-template-columns: 5% auto 5%;
+        
+    }
+
+    body {
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    h3{
+        font-size: 3rem;
+
+    }
+
+    .bann_capt{
+        text-decoration: wavy;
+        font-weight: bold;
+        font-size: 2rem; 
+        line-height: 2.5rem;
+        color: white;  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+    
+ 
+@media screen and (min-width: 640px) and (max-width: 959px){
+    
+    body {
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h3{
+        font-size: 3rem;
+
+    }
+
+    .grid-container{
+        grid-template-columns: 5% auto 5%;
+        
+    }
+
+    main{
+        flex-direction: column;
+        
+    }
+
+    #section1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    section .contenido{
+    width: 33%;
+
+    }
+
+    .banner img{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bann_capt{
+        font-size: 2rem; 
+        color: white;  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .section2{
+        position: relative;
+        width: 100%;
+        
+    }
+
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px){
+    
+    body {
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    h3{
+        font-size: 3.5rem;
+
+    }
+
+
+    .grid-container{
+        grid-template-columns: 5% auto 5%;
+        
+    }
+
+    main{
+        flex-direction: column;
+        
+    }
+
+    #section1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    section .contenido{
+    width: 33%;
+
+    }
+
+    .banner img{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bann_capt{
+        font-size: 3rem; 
+        color: white;  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .section2{
+        position: relative;
+        width: 100%;
+        
+    }
+
+    
+
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1919px){
+    
+    body {
+        font-family: sans-serif;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    h3{
+        font-size: 4rem;
+
+    }
+
+    
+
+    .grid-container{
+        grid-template-columns: 5% auto 5%;
+        
+    }
+
+    main{
+        flex-direction: column;
+        
+    }
+
+    #section1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    section .contenido{
+    width: 33%;
+
+    }
+
+    .banner img{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bann_capt{
+        font-size: 3.5rem; 
+        color: white;  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .section2{
+        position: relative;
+        width: 100%;
+    }
+
+    .social{
+
+        align-self: flex-end;
+        position: absolute;
+        
+        }
+        
+        .social img{
+        
+        width: 11%;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        margin: 5px;
+    
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2879px){
+    
+    body {
+        font-family: sans-serif;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    h3{
+        font-size: 4.5rem;
+
+    }
+
+    
+
+    .grid-container{
+        grid-template-columns: 5% auto 5%;
+        
+    }
+
+    main{
+        flex-direction: column;
+        
+    }
+
+    #section1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    section .contenido{
+    width: 33%;
+
+    }
+
+    .banner img{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bann_capt{
+        font-size: 4rem; 
+        color: white;  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .section2{
+        position: relative;
+        width: 100%;
+    }
+
+    .social{
+       
+        align-self: flex-end;
+        position: absolute;
+        
+        }
+        
+        .social img{
+        
+        width: 11%;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        margin: 5px;
+    
+    }
+    
+}
+
+@media screen and (min-width: 2080px) and (max-width: 3840px){
+    
+    body {
+        font-family: sans-serif;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    h3{
+        font-size: 5rem;
+
+    }
+
+    
+
+    .grid-container{
+        grid-template-columns: 5% auto 5%;
+        
+    }
+
+    main{
+        flex-direction: column;
+        
+    }
+
+    #section1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    section .contenido{
+    width: 33%;
+
+    }
+
+    .banner img{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bann_capt{
+        font-size: 4.5rem; 
+        color: white;  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .section2{
+        position: relative;
+        width: 100%;
+    }
+
+    .social{
+        margin-left: 70%;
+        align-self: flex-end;
+        position: absolute;
+        
+        }
+        
+        .social img{
+        
+        width: 11%;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        margin: 5px;
+    
+    }
+    
+}
+
